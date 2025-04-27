@@ -3,24 +3,25 @@
 /**
  * main - print the letters of the alphabet
  *
- * Description: print the letters of the alphabet in lower then in uppercase
+ * Description: Print the letters of the alphabet in lowercase,
+ * then in uppercase
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i,j;
+	int i, j;
 
-	i=97;
-	j=65;
+	i = 97;
+	j = 65;
 
-	while(i < 123)
+	while (i < 123)
 	{
 		putchar(i);
 		i++;
 	}
-	while(j < 91)
+
+	while (j < 91)
 	{
 		putchar(j);
 		j++;
@@ -28,5 +29,5 @@ int main(void)
 
 	putchar(10);
 
-	return(0);
+	return (0);
 }
