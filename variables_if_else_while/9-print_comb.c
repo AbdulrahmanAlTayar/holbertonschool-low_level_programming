@@ -1,28 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
+ * main - print single digit numbers
  *
- * Description: Prints the numbers from 0 to 9 separated by ", "
- * followed by a new line. Numbers are in ascending order.
+ * Description: print single digit numbers with commas
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 0; i < 9; i++)
-    {
-        putchar(i + '0');
-        if (i < 8)
-        {
-            putchar(',');
-            putchar(' ');
-        }
-    }
-    putchar('\n');
+	i = 48;
 
-    return (0);
+	while (i < 58)
+	{
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
 }
