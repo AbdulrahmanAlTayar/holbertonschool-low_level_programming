@@ -13,11 +13,11 @@ int main(void)
 {
 	int i;
 
-	i=97;
-	
-	while(i<123)
+	i = 97;
+
+	while (i < 123)
 	{
-		if((char)i != 'e' && (char)i != 'q')
+		if ((char)i != 'e' && (char)i != 'q')
 		{
 			putchar(i);
 		}
@@ -25,5 +25,5 @@ int main(void)
 	}
 	putchar(10);
 
-	return(0);
+	return (0);
 }
