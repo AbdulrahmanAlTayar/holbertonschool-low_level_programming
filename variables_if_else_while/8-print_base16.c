@@ -13,18 +13,19 @@ int main(void)
 {
     int i;
 
+    /* Loop to print digits 0-9 */
     for (i = 0; i < 10; i++)
     {
-        putchar(i + '0');
+        putchar(i + '0'); /* Convert int to char and print it */
     }
 
+    /* Loop to print letters a-f */
     for (i = 0; i < 6; i++)
     {
-        putchar(i + 'a');
+        putchar(i + 'a'); /* Convert int to char ('a' starts at 97 in ASCII) */
     }
 
-    putchar('\n');
+    putchar('\n'); /* Print a newline character */
 
     return (0);
 }
-
