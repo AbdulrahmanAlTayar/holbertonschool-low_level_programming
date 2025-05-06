@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * multiply - multiplies two integers
+ * mul - multiplies two integers
  * @a: the first integer to be multiplied
  * @b: the second integer to be multiplied
+ *
+ * Description: This function multiplies two integers, a and b,
+ * and returns the result.
  *
  * Return: the result of multiplying a and b
  */
