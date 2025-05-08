@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_square - prints a square using the # character
- * @size: the size of the square
+ * reset_to_98 - takes a pointer to an int as parameter and updates the value it points to to 98
+ * @n: taken value from main or user
  *
  * Return: nothing
  */
