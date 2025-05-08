@@ -31,8 +31,6 @@ By the end of this project, you will be able to:
 | `7-puts_half.c`       | Prints the second half of a string              |
 | `8-print_array.c`     | Prints `n` elements of an integer array         |
 | `9-strcpy.c`          | Copies the string pointed to by `src` to `dest` |
-| `100-atoi.c`          | Converts a string to an integer                 |
-| `101-keygen.c`        | Generates a random valid password (for fun 😄)  |
 
 ---
 
