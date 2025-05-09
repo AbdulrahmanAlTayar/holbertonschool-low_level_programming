@@ -1,22 +1,18 @@
 #include "main.h"
 
 /**
-*print_line - Draws a straight line in the terminal
-*@n: number of time the character _ should be printed
-*
-*Return: void
-*/
-void print_line(int n)
+ * puts2 - Prints every other character of a string, starting with the first
+ * @str: The string to be printed
+ */
+void puts2(char *str)
 {
-int i;
-if (n <= 0)
-{
-_putchar ('\n');
-}
-else
-{
-for (i = 0; i < n; i++)
-_putchar ('_');
-_putchar ('\n');
-}
+    int i = 0;
+
+    while (str[i] != '\0')
+    {
+        if (i % 2 == 0)
+            _putchar(str[i]);
+        i++;
+    }
+    _putchar('\n');
 }
