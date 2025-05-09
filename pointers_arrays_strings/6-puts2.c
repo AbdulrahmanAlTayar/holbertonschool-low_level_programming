@@ -1,19 +1,20 @@
-#include "main.h"
-#include <unistd.h>
-
+#include "holberton.h"
+#include "2-strlen.c"
 /**
- * puts2 - prints every other character of a string
- * @str: input string
+ * puts2 - puts string twice
  *
- * Return: void
+ * @str: string to put twice
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != '\0')
+	for (i = 0; i < _strlen(str); i++)
 	{
-		_putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
 	}
+	_putchar('\n');
 }
