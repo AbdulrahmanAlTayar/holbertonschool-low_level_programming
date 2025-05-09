@@ -15,8 +15,4 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 char *_strcat(char *dest, const char *src);
 
-
-
-
-
 #endif /* MAIN_H */
