@@ -21,9 +21,6 @@ This project contains simple C programs demonstrating the use of **function poin
 ## 🛠️ Compile Example
 
 ```bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_name.c -o print_name
-./print_name
-
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc
-./calc 98 + 2
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-example.c -o file_a
+./file_a
 
