@@ -4,7 +4,7 @@
 /**
  * get_op_func - Selects the correct operation
  * @s: operator
- * Return: pointer to correct function
+ * Return: pointer to correct function, or NULL
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,16 +18,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (s == NULL || s[1] != '\0')  /* هنا التحقق الإضافي */
-		return (NULL);
-
-	while (ops[i].op != NULL)
-	{
-		if (*(ops[i].op) == *s)
-			return (ops[i].f);
+	while (ops[i].op != NULL && s && s[1] == '\0' && *(ops[i].op) != *s)
 		i++;
-	}
 
-	return (NULL);
+	return (s && s[1] == '\0' ? ops[i].f : NULL);
 }
 
