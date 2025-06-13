@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	while ((r = read(fd_from, buffer, sizeof(buffer))) > 0)
 	{
 		w = write(fd_to, buffer, r);
-		if (w != r)
+		if (w == -1 || w != r)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fd_from);
