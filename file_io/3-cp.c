@@ -9,7 +9,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 0 on success, or exit with error code on failure
+ * Return: 0 on success, or exits with the proper code on failure
  */
 int main(int argc, char *argv[])
 {
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
